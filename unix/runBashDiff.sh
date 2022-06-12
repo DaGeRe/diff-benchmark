@@ -3,7 +3,7 @@ function unzipCommit {
 	if [ ! -f $commit.txt ]
 	then
 		echo "Unzipping $commit"
-		unzip $commit.zip
+		unzip ../$commit.zip
 		mv trace.txt $commit.txt
 	fi
 }
@@ -23,5 +23,5 @@ do
 		head 414ae6.txt -n $size > $size/414ae6.txt
 		head afdedc.txt -n $size > $size/afdedc.txt
 	fi
-	/usr/bin/time --quiet --format="\t%e" ./getDiff.sh $size >> durationBash.csv
+	/usr/bin/time --quiet --format="\t%e" ./getDiff.sh $size
 done
