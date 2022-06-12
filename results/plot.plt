@@ -7,10 +7,10 @@ set multiplot layout 2,1
 set xlabel 'Count of lines'
 set ylabel 'Duration in Seconds
 
-plot 'results_unix.csv' w linespoint
+plot 'results_unix.csv' w linespoint title 'Unix Diff Tool'
 
 #obtained by cat results_java.txt | tr "," "." | awk '{print $2" "1/$5}' > results_java.csv
-plot 'results_java.csv' w linespoint
+plot 'results_java.csv' w linespoint title 'Java Diff Lib'
 
 unset multiplot
 unset out
