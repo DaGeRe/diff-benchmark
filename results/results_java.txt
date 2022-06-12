@@ -1,0 +1,5 @@
+diffBenchmark.DiffBenchmark.testMethod   10000  thrpt   10  44,249 ± 5,414  ops/s
+diffBenchmark.DiffBenchmark.testMethod   50000  thrpt   10   1,739 ± 0,041  ops/s
+diffBenchmark.DiffBenchmark.testMethod  100000  thrpt   10   0,544 ± 0,011  ops/s
+diffBenchmark.DiffBenchmark.testMethod  200000  thrpt   10   0,083 ± 0,002  ops/s
+diffBenchmark.DiffBenchmark.testMethod  300000  thrpt   10   0,025 ± 0,001  ops/s
